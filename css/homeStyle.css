@@ -26,6 +26,9 @@ a:hover{
     color: #547cff;
     text-decoration: none
 }
+button:focus , img:focus , a:focus{
+outline:none
+}
 .container{
     margin: 0;
     padding:0;
@@ -65,13 +68,16 @@ button.openChannelsList {
     font-size: 20px;
     line-height: 0;
     padding: 0;
+    transition: .3s;
 }
 button.openChannelsList:hover , button.openChannelsList.dropdown-toggle:focus{
     background: none;
     border: none;
     color:#547cff;
     box-shadow: none;
-    outline: none
+    outline: none;
+    transition: .3s;
+    
 }
 .dropdown-menu.ChannelsCats.show {
     transform: translate(10px, -5px);
