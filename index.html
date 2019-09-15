@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/fontawesomeAll.min.css">
     <link rel="stylesheet" href="css/homeStyle.css">
     <title>Live Stream</title>
 </head>
@@ -37,11 +38,31 @@
                             <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Channels<span>
-                                    <a href="#" class="openChannelsList">
-
-                                    </a>
-                                </span></a>
+                            <div class="btn-group dropright">
+                                <button type="button" class="openChannelsList dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Channels
+                                </button>
+                                <div class="dropdown-menu ChannelsCats">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Sports
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Movies
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                TV Shows
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
@@ -52,6 +73,11 @@
                     </ul>
                 </div>
             </nav>
+            <!-- <span>
+                                            <a href="#" class="openChannelsList">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </a>
+                                        </span></a> -->
             <div class="headerTvShape">
                 <img src="img/tvLogo.png" alt="">
                 <img src="img/tvBadSignal2.gif" alt="">
@@ -59,7 +85,7 @@
         </header>
         <section class="channelsPlayerSec">
             <div class="row">
-                <div class="col-md-4 col-sm-12 rmPadding">
+                <div class="col-md-12 col-lg-4 col-sm-12 rmPadding">
                     <div class="channelsTitle">
                         <div class="channelsLogo">
                             <img src="img/sportsLogo.png" alt="">
@@ -89,14 +115,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-8 col-sm-12 rmPadding">
+                <div class="col-md-12 col-lg-8 col-sm-12 rmPadding">
                     <div class="playerContainer">
                         <div class="playerTitle">
                             <label>BEIN SPORTS HD1</label>
                         </div>
                         <div class="player">
                             <video controls>
-                                <source src="live stream website design/videos/salahVsChealse2_0.mp4" type="video/mp4">
+                                <source src="videos/salahVsChealse2_0.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -109,10 +135,10 @@
         </section>
         <section class="connectSec">
             <div class="row">
-                <div class="col-md-6 col-sm-12 rmPadding connectP">
+                <div class="col-md-12 col-sm-12 col-lg-6 rmPadding connectP">
                     <p>GET CONNECTED</p>
                 </div>
-                <div class="col-md-6 col-sm-12 rmPadding">
+                <div class="col-md-12 col-sm-12 col-lg-6 rmPadding">
                     <ul class="socialBar">
                         <li class="socialIcon">
                             <a>
@@ -124,7 +150,7 @@
                                 <img src="img/twitter.png" alt=""></a>
                         </li>
                         <li class="socialIcon">
-                            <a >
+                            <a>
                                 <img src="img/youtube.png" alt=""></a>
                         </li>
                     </ul>
@@ -174,6 +200,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/fontawesomeAll.min.js"></script>
 </body>
 
 </html>
