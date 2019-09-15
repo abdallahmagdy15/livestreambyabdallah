@@ -23,7 +23,7 @@ p{
     margin-bottom: 0
 }
 a:hover{
-    color: transparent;
+    color: #547cff;
     text-decoration: none
 }
 .container{
@@ -53,8 +53,31 @@ a:hover{
     font-family: 'El Messiri', sans-serif;
     font-family: 'Questrial', sans-serif;
     */
+    display: inline;
 }
-
+li.nav-item:nth-child(2){
+    margin-right : 10px
+}
+button.openChannelsList {
+    background: none;
+    border: none;
+    color:#6c757d;
+    font-size: 20px;
+    line-height: 0;
+    padding: 0;
+}
+button.openChannelsList:hover , button.openChannelsList.dropdown-toggle:focus{
+    background: none;
+    border: none;
+    color:#547cff;
+    box-shadow: none;
+    outline: none
+}
+.dropdown-menu.ChannelsCats.show {
+    transform: translate(10px, -5px);
+    border-radius: 15px;
+    box-shadow: #d6d6d6 0px 2px 8px;
+}
 header {
     padding: 8px 30px 30px;
 }
@@ -87,7 +110,7 @@ div#collapsibleNavbar {
     padding-left: 20px;
 }
 span.navbar-toggler-icon img {
-    width: 60px;
+    width: 55px;
 }
 /* END header style */
 
@@ -141,7 +164,7 @@ span.navbar-toggler-icon img {
     background: none;
 }
 .channelsContainer li:hover {
-    background-color: #ecececd1;
+    background-color: #ececec;
     border-radius: 50px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -211,7 +234,7 @@ ul.socialBar {
     line-height: 140px;
     float: right;
 }
-.col-md-6.rmPadding.connectP {
+.connectP {
     color: #547cff;
     font-weight: bold;
     font-size: 35px;
@@ -219,7 +242,7 @@ ul.socialBar {
     line-height: 152px;
     font-family: 'Josefin Sans', sans-serif;
 }
-.col-md-6.rmPadding.connectP p{
+.connectP p{
     margin-bottom: 0;
     margin-left: 60px;
 }
@@ -300,7 +323,14 @@ footer::after {
 
 
 
-@media(max-width:1000px){
+@media(max-width:1200px){
+    section.channelsPlayerSec {
+        height: auto;
+        padding-bottom: 20%;
+    }
+    .channelsContainer {
+        margin-bottom: 12%;
+    }
     .playerContainer {
         position: relative;
         width: 100%;
@@ -324,18 +354,21 @@ footer::after {
         top: 15%;
     }
     .channelsTitle{
-        width: 92%;
+        width: 90%;
     }
     section.connectSec{
         height: 100%;
-        padding: 15% 0 10% 0;
+        padding: 10% 0 6% 0;
     }
-    .col-md-6.rmPadding.connectP p {
+    .connectP p {
         margin-bottom: 0;
         text-align: center;
         margin-left: 0;
-        margin-bottom: 15%;
+        margin-bottom: 12%;
 
+    }
+    .connectP{
+        font-size: 2rem;
     }
     li.socialIcon {
         display: inline-block;
@@ -353,7 +386,7 @@ footer::after {
         justify-content: center;
         align-items: center;
     }
-    .col-md-6.rmPadding.connectP{
+    .connectP{
         line-height: 0;
     }
     footer .nav .nav-item {
@@ -393,5 +426,8 @@ footer::after {
     }
     .navbar-toggler-icon {
         height: auto
+    }
+    .channelsContainer li img {
+        width: 90%;
     }
 }
