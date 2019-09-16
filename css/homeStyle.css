@@ -184,8 +184,8 @@ span.navbar-toggler-icon img {
     margin-left: -28px;
     box-shadow: #000000b8 0px 10px 6px;
 }
-.player video {
-    width: 773px;
+iframe#playerIframe {
+    height: 435px;
 }
 .playerTitle label{
     font-size: 22px;
