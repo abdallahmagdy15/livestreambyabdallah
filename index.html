@@ -94,22 +94,22 @@
                     </div>
                     <ul class="list-group list-group-flush channelsContainer">
                         <li class="list-group-item">
-                            <a href="#">
+                            <a id="bein1" href="#" onclick="curr_channel=1;switchChannels()">
                                 <img src="img/Logo_beIN_SPORTS_1.png" alt="BEIN SPORTS HD1">
                             </a>
                         </li>
                         <li class="list-group-item">
-                            <a href="#">
+                            <a id="bein2" href="#" onclick="curr_channel=2;switchChannels()">
                                 <img src="img/Logo_beIN_SPORTS_2.png" alt="BEIN SPORTS HD1">
                             </a>
                         </li>
                         <li class="list-group-item">
-                            <a href="#">
+                            <a id="bein3" href="#" onclick="curr_channel=3;switchChannels()">
                                 <img src="img/Logo_beIN_SPORTS_3.png" alt="BEIN SPORTS HD1">
                             </a>
                         </li>
                         <li class="list-group-item">
-                            <a href="#">
+                            <a id="bein4" href="#" onclick="curr_channel=4;switchChannels()">
                                 <img src="img/Logo_beIN_SPORTS.png" style="width:176px" alt="BEIN SPORTS HD1">
                             </a>
                         </li>
@@ -121,10 +121,8 @@
                             <label>BEIN SPORTS HD1</label>
                         </div>
                         <div class="player">
-                            <video controls>
-                                <source src="live stream website design/videos/salahVsChealse2_0.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <iframe id="playerIframe" allowfullscreen='true' frameborder='0' width='100%'>
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -181,7 +179,7 @@
                 </ul>
             </div>
             <div class="copyrights">
-                <p>Copyright © 2019 AbdallahElkhayat All rights reserved. The information contained in Goal.com may not
+                <p>Copyright © 2019 AbdallahElkhayat All rights reserved. The information contained may not
                     be
                     published, broadcast, rewritten, or redistributed without the prior written authority of
                     AbdallahElkhayat.
@@ -201,6 +199,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="js/fontawesomeAll.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
